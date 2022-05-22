@@ -6,32 +6,8 @@
         <div>
             <ul id="itemsContainer"></ul>
         </div>
+        <button onclick="mostrarMayor()">Mostrar mayor</button>
 
-        <script type="text/javascript">
-            var containerId = "itemsContainer"
-            var container = document.getElementById(containerId)
-            var items = [
-                {
-                    id: 1,
-                    name: "Item 1"
-                },
-                {
-                    id: 2,
-                    name: "Item 2"
-                },
-                {
-                    id: 3,
-                    name: "Item 3"
-                }
-            ]
-
-            for (var index = 0; index < items.length; index++) {
-                var element = items[index];
-                var itemList = document.createElement("li")
-                itemList.innerHTML = element.name
-                itemList.setAttribute("id", element.id)  
-                container.appendChild(itemList)
-            }
-        </script>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
